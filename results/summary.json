@@ -1,0 +1,129 @@
+{
+  "snapshot_label": "WFS-Abruf vom 10.11.2026",
+  "sources": {
+    "street": {
+      "source": "https://gdi.berlin.de/services/wfs/baumbestand",
+      "layer": "baumbestand:strassenbaeume",
+      "retrieved_at": "2026-11-10T13:30:56.923694+00:00",
+      "feature_count": 434765,
+      "crs": "EPSG:4326",
+      "sort_field": "gisid",
+      "license": "dl-de-zero-2.0",
+      "sha256": "29cab15aecc0cd94fe2a5fc05b72a8ffd7c9552cf227b4014c924276a1d0eb00",
+      "response_timestamps": [
+        "2026-11-10T13:30:00.617Z",
+        "2026-11-10T13:30:03.006Z",
+        "2026-11-10T13:30:05.335Z",
+        "2026-11-10T13:30:07.753Z",
+        "2026-11-10T13:30:10.103Z",
+        "2026-11-10T13:30:12.574Z",
+        "2026-11-10T13:30:15.338Z",
+        "2026-11-10T13:30:17.795Z",
+        "2026-11-10T13:30:20.242Z",
+        "2026-11-10T13:30:22.770Z",
+        "2026-11-10T13:30:25.522Z",
+        "2026-11-10T13:30:28.081Z",
+        "2026-11-10T13:30:30.688Z",
+        "2026-11-10T13:30:33.351Z",
+        "2026-11-10T13:30:36.061Z",
+        "2026-11-10T13:30:38.713Z",
+        "2026-11-10T13:30:41.479Z",
+        "2026-11-10T13:30:44.387Z",
+        "2026-11-10T13:30:47.381Z",
+        "2026-11-10T13:30:50.334Z",
+        "2026-11-10T13:30:53.322Z",
+        "2026-11-10T13:30:55.992Z"
+      ],
+      "retained_fields": [
+        "bezirk",
+        "gattung",
+        "gattung_deutsch",
+        "standalter"
+      ]
+    },
+    "park": {
+      "source": "https://gdi.berlin.de/services/wfs/baumbestand",
+      "layer": "baumbestand:anlagenbaeume",
+      "retrieved_at": "2026-11-10T13:32:10.471878+00:00",
+      "feature_count": 527780,
+      "crs": "EPSG:4326",
+      "sort_field": "gisid",
+      "license": "dl-de-zero-2.0",
+      "sha256": "000b53dd39052e28635e4853c779d19ec1b9eab322b2e18c5047c22366078dd8",
+      "response_timestamps": [
+        "2026-11-10T13:30:58.970Z",
+        "2026-11-10T13:31:01.251Z",
+        "2026-11-10T13:31:03.479Z",
+        "2026-11-10T13:31:05.798Z",
+        "2026-11-10T13:31:08.090Z",
+        "2026-11-10T13:31:10.558Z",
+        "2026-11-10T13:31:12.924Z",
+        "2026-11-10T13:31:15.333Z",
+        "2026-11-10T13:31:17.932Z",
+        "2026-11-10T13:31:20.291Z",
+        "2026-11-10T13:31:23.279Z",
+        "2026-11-10T13:31:25.786Z",
+        "2026-11-10T13:31:28.568Z",
+        "2026-11-10T13:31:31.062Z",
+        "2026-11-10T13:31:33.645Z",
+        "2026-11-10T13:31:36.378Z",
+        "2026-11-10T13:31:39.226Z",
+        "2026-11-10T13:31:42.001Z",
+        "2026-11-10T13:31:45.171Z",
+        "2026-11-10T13:31:48.017Z",
+        "2026-11-10T13:31:51.037Z",
+        "2026-11-10T13:31:54.324Z",
+        "2026-11-10T13:31:57.318Z",
+        "2026-11-10T13:32:00.570Z",
+        "2026-11-10T13:32:03.900Z",
+        "2026-11-10T13:32:07.081Z",
+        "2026-11-10T13:32:09.904Z"
+      ],
+      "retained_fields": [
+        "bezirk",
+        "gattung",
+        "gattung_deutsch",
+        "standalter"
+      ]
+    },
+    "districts": {
+      "source": "https://gdi.berlin.de/services/wfs/alkis_bezirke",
+      "layer": "alkis_bezirke:bezirksgrenzen",
+      "retrieved_at": "2026-11-10T13:32:11.300597+00:00",
+      "feature_count": 12,
+      "crs": "EPSG:4326",
+      "sort_field": "name",
+      "license": "dl-de-zero-2.0",
+      "sha256": "e901fe9790075d1c866ab89c62b3e859e18cd2f892fb1916f815e1a2730d0012",
+      "response_timestamps": [
+        "2026-11-10T13:32:11.469Z"
+      ],
+      "retained_fields": [
+        "name",
+        "namgem"
+      ]
+    }
+  },
+  "quality": {
+    "Straße": {
+      "records": 434765,
+      "unknown_genus": 9348,
+      "unknown_district": 1589,
+      "missing_or_invalid_age": 1703,
+      "age_over_200": 67,
+      "invalid_or_missing_geometry": 0,
+      "points_outside_boundary": 73
+    },
+    "Anlage": {
+      "records": 527780,
+      "unknown_genus": 31111,
+      "unknown_district": 4707,
+      "missing_or_invalid_age": 171954,
+      "age_over_200": 279,
+      "invalid_or_missing_geometry": 0
+    }
+  },
+  "h3_resolution": 9,
+  "records_total": 962545,
+  "method": "Rows counted once per source layer; no cross-layer deduplication; genus groups from gattung_deutsch."
+}
